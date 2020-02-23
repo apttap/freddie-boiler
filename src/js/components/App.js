@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Default from './default/Default.js'
+
 class App extends Component {
   constructor() {
     super();
@@ -22,13 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <form>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
+      <Default/>
     );
   }
 }
